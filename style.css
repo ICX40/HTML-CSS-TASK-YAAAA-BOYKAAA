@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height:100vh;
+}
+nav{
+    background: rgb(48, 48, 48);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenar nav h1{
+    color:#ff08a4;
+    font-size: 20px;
+    transform: translateX(-50px);
+}
+.contenar nav ul{
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+}
+.contenar nav ul li{
+    margin: 15px 10px;
+    transform: translateX(70px);
+}
+.contenar nav ul li a{
+    color: white;
+    text-decoration:none;
+    padding:6px 11px;
+}
+.contenar nav ul li a:hover{
+    color: #ff08a4;
+    background-color: white;
+    border-radius:15px;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+.contenar nav ul li .first{
+    color: #ff08a4;
+}
+.contenar .profile{
+    width: 100%;
+    height: 90vh;
+    border-bottom: 10px solid #ff08a4;
+}
+.contenar .profile img{
+    width: 100%;
+    height: 90Vh;
+    background-size: cover;
+    filter: brightness(0.3); 
+    position: absolute;
+}
+.contenar .profile .title{
+    position: relative;
+    text-align: center;
+    transform:translateY(250px) ;
+    color: white;
+}
+.contenar .profile .title h4{
+    margin-bottom:10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.contenar .profile .title h1{
+    color: #ff08a4;
+    text-transform: uppercase;
+    font-size: 64px;
+    padding: 15px 0;
+    font-weight: 700;
+}
+.contenar .profile .title p{
+    font-size: 17px;
+    font-weight: 600;
+}
+.contenar .profile .title p span{
+    display: inline-block;
+    transform: translateY(5px);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right:2px solid white;
+    animation: typing 5s steps(8) infinite ,cursor .7s infinite ;
+}
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 8ch;
+    }
+    100%{
+        width: 0;
+    }
+}
+@keyframes cursor{
+    50%{border-color: transparent;}
+}
+.contenar .services{
+    background: rgb(210, 210, 210);
+    width: 100%;
+    height: 60vh;
+}
+.contenar .services h1{
+    text-align: center;
+    transform: translateY(20px);
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 80px;
+}
+.contenar .services .list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 25px;
+}
+.contenar .services .list .lista{
+    width: 250px;
+}
+.contenar .services .list .lista svg{
+    color: #ff08a4;
+    width: 40px;
+    transform: translateX(105px)
+}
+.contenar .services .list .lista h1{
+    text-align: center;
+    font-size: 16px;
+    margin: 0 25px;
+}
+.contenar .services .list .lista p{
+    text-align: center;
+    transform: translateY(30px);
+}
+.contenar .pro{
+    width: 100%;
+    padding-bottom: 60px;
+}
+.contenar .pro .tit{
+    text-align: center;
+    margin-top: 30px;
+}
+.contenar .pro .tit h1{
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.contenar .pro .tit ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 35px;
+}
+.contenar .pro .tit ul li{
+    margin: 15px 20px;
+}
+.contenar .pro .tit ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.contenar .pro .tit ul li a:hover{
+    color: #ff08a4;
+    background-color: wheat;
+    border-radius:15px;
+    font-size: 17px;
+    transition: all 0.2s ease-in-out;
+}
+.contenar .pro .tit ul li .second{
+    color: #ff08a4;
+}
+.contenar .pro .icons{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    row-gap: 20px;
+    width: 83%;
+}
+.contenar .pro .icons .image{
+   overflow: hidden;
+    transform: translateX(140px);
+}
+.contenar .pro .icons .image img{
+    width: 350px;
+}
+
+/* الكود حجييييييي*/
+
+.contenar .count{
+    background: rgb(210, 210, 210);
+    width: 100%;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenar .count .num{
+    text-align: center;
+}
+.contenar .count .num svg{
+    color: #ff08a4;
+    width: 40px;
+    margin-bottom: 10px;
+}
+.contenar .count .num h1{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+.contenar .count .num p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* قسم آراء العملاء */
+.contenar .feed{
+    width: 100%;
+    padding: 70px 0;
+}
+.contenar .feed h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.contenar .feed .card{
+    background: rgb(210, 210, 210);
+    width: 55%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.contenar .feed .card .shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 160px solid #ff08a4;
+    border-right: 160px solid transparent;
+}
+.contenar .feed .card img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    margin-right: 30px;
+}
+.contenar .feed .card .info h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.contenar .feed .card .info h4{
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.contenar .feed .card .info p{
+    line-height: 1.5;
+}
+
+/* قسم البار */
+.contenar .blog{
+    background: rgb(210, 210, 210);
+    width: 100%;
+    padding: 70px 0;
+}
+.contenar .blog h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.contenar .blog .posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    width: 80%;
+    margin: 0 auto;
+}
+.contenar .blog .posts .post{
+    background: white;
+}
+.contenar .blog .posts .post img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.contenar .blog .posts .post .text{
+    padding: 20px;
+}
+.contenar .blog .posts .post .text h4{
+    color: rgb(90, 90, 90);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.contenar .blog .posts .post .text h2{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.contenar .blog .posts .post .text h2:hover{
+    color: #ff08a4;
+    transition: all 0.2s ease-in-out;
+}
+.contenar .blog .posts .post .text p{
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.contenar .blog .posts .post .text a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+.contenar .blog .posts .post .text a:hover{
+    color: #ff08a4;
+    transition: all 0.2s ease-in-out;
+}
+
+/* قسم تواصل معنا */
+.contenar .cont{
+    background: white;
+    width: 100%;
+    padding: 60px 0 180px 0;
+}
+.contenar .cont h1{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+/* الفوتر وأيقونات السوشيال ميديا */
+.contenar .foot{
+    background: rgb(48, 48, 48);
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+.contenar .foot ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.contenar .foot ul li{
+    margin: 0 10px;
+}
+.contenar .foot ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.contenar .foot ul li a svg{
+    width: 18px;
+    height: 18px;
+}
+.contenar .foot ul li a:hover{
+    color: #ff08a4;
+    transition: all 0.2s ease-in-out;
+}
+.contenar .foot p span{
+    color: #ff08a4;
+}
